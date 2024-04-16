@@ -9,4 +9,4 @@ RUN npm install
 
 EXPOSE 3038
 
-CMD [ "npm", "run", "dev", "--host" ]
+CMD [ "npm", "run", "dev" ]
