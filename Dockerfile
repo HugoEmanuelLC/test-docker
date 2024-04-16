@@ -1,12 +1,12 @@
-FROM node:18-alpine
+FROM node:18
 
 WORKDIR /app
 
 COPY . .
 
-RUN npm install -g npm@10.5.0
+# RUN npm install -g npm@10.5.0
 RUN npm install
 
-EXPOSE 4000:3038
+EXPOSE 3038
 
 CMD [ "npm", "run", "dev" ]
