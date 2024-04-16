@@ -1,0 +1,64 @@
+section.hero{
+    // background-color: #f2f2f2;
+    // background-image: url('./assets/react.jpg');
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    text-align: center;
+    color: #3ec8dc;
+    font-size: 24px;
+    font-weight: bold;
+
+    h1{
+        font-size: 10vw;
+        color: $color_second;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        @include Larges{
+            font-size: 120px;
+        }
+    }
+    h2{
+        font-size: 5.5vw;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        @include Larges{
+            font-size: 66px;
+        }
+
+        span{
+            color: red;
+        }
+    }
+    p{
+        font-size: 3vw;
+        margin-bottom: 20px;
+
+        @include Larges{
+            font-size: 36px;
+        }
+    }
+
+    a.btn{
+        font-size: 2vw;
+        border: $color_third 2px solid;
+        border-radius: 20px;
+        padding: 5px 10px;
+        color: $color_third;
+
+        @include Larges{
+            font-size: 24px;
+        }
+
+        &:hover{
+            background-color: $color_third;
+            color: $color_prime;
+        }
+    }
+}

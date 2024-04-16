@@ -1,0 +1,61 @@
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    @include blur;
+    
+    ul{
+        display: flex;
+        justify-content: center;
+
+        li{
+            @include Dfx_JCc_AIc;
+        }
+    }
+    a{
+        padding: 10px 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        
+        @include Larges{
+            font-size: 24px;
+        }
+
+        &::before{
+            content: "";
+            background-color: $color_third;
+            position: absolute;
+            bottom: 5px;
+            height: 1.5px;
+            width: 0;
+            transition: 300ms;
+        }
+
+        &:hover{
+            color: $color_third;
+
+            &::before{
+                width: 80%;
+                transition: 300ms;
+            }
+        }
+    }
+    a.active{
+        color: $color_third;
+
+        &::before{
+            content: "";
+            background-color: $color_third;
+            position: absolute;
+            bottom: 5px;
+            height: 1.5px;
+            width: 80%;
+            transition: 300ms;
+        }
+    }
+}

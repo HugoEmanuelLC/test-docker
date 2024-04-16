@@ -1,0 +1,12 @@
+@import './sass/imports';
+@import './sass/mixin';
+@import './sass/variables';
+@import './sass/init';
+@import './sass/global';
+@import './composants/header/header';
+
+// home
+@import './pages/home/composants/hero/hero';
+// projets
+// about
+@import './pages/about/about';
